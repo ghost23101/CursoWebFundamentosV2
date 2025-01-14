@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@media (min-width: 365px) and (max-width: 800px) {
+
+    h2{
+        text-align: center;
+    }
+    
+}
