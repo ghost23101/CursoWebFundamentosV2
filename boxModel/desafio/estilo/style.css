@@ -68,8 +68,9 @@ p{
     font-weight: lighter;
 }
 
-.negrito-especial{
+a{
     color: var(--sexta-cor);
+    text-decoration: none;
 }
 
 ul li{
