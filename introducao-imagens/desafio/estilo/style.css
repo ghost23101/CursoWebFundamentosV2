@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+#img-topo{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+}
+
+nav{
+    
+}
+
+a{
+
+}
