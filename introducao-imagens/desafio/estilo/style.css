@@ -10,17 +10,83 @@ html{
     font-family: sans-serif;
 }
 
-#img-topo{
-    display: block;
-    width: 100%;
-    height: 600px;
-    background-attachment: fixed;
+body{
+    background-color: lightgrey;
 }
 
-nav{
+#topo{
+    display: inline-block;
+    position: relative;
+    width: 100%;
     
 }
 
-a{
+#title-topo{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
 
+#subtitle-topo{
+    position: absolute;
+    top: 63%;
+    left: 40%;
+    font-size: 1rem;
+    color: white;
+    background-color: #0000008d;
+    padding: 12px;
+    border-bottom: 2px solid;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.692);
+}
+
+#img-topo{
+    display: block;
+    width: 100%;
+    height: 656px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a{
+    right: 5%;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+main{
+    width: 85%;
+    margin: auto;
+}
+
+section aside{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+}
+
+h2{
+    background-color: lightgrey;
+    margin: 0 0 15px 0;
+    padding: 10px;
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+.ancora-main{
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+footer > p{
+    background-color: #0000008d;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    color: white;
 }
