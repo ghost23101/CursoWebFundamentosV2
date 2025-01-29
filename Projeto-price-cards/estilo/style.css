@@ -50,7 +50,12 @@ header{
     border-radius: 10px;
 }
 
+.header__nav a:hover{
+    text-decoration: underline;
+}
+
 a.header__nav--active{
     background-color: var(--terceira-cor);
     color: var(--primeira-cor);
+    pointer-events: none;
 }
