@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../imagens/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 2px 2px black;
+    padding-top: 60px;
+    margin-bottom: 24px;
+}
+
+#paragrafo-topo{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    width: 27%;
+    padding: 13px;
+    border-bottom: 3px solid white;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 62%;
+    background-color: white;
+    margin: 40px auto;
+    padding: 16px;
+    gap: 15px;
+}
+
+.cards-conteudo img{
+    margin-bottom: -20px;
+    
+}
+
+.cards-conteudo p{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0;
+}
