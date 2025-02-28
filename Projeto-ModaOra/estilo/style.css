@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+:root{
+    --cor-background-header: #162028;
+    --cor-texto-menu: #425564;
+    --cor-textos: #555;
+}
+
+.img-fundo{
+    background-image: url(../img/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    padding: 80px;
+}
+
+.img-fundo article h1{
+    color: white;
+}
