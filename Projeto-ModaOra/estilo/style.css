@@ -1,19 +1,188 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Federo&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+
 :root{
     --cor-background-header: #162028;
     --cor-texto-menu: #425564;
     --cor-textos: #555;
+    --cor-img-detalhe: #003d52;
+    --cor-footer: #0b171f;
+    --cor-texto-footer: #6f8597;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Roboto", serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-background-header);
+    padding: 15px;
+}
+
+/* Cabeçalho */
+header h1{
+    color: white;
+    font-size: 3.9rem;
+    font-family: "Belleza", serif;
+    font-weight: 500;
+}
+
+header nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: white;
+    gap: 30px;
+    font-family: "Italiana", serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul li{
+    position: relative;
+}
+
+header nav ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Ajusta a posição da underline */
+    left: 50%; /* Ponto inicial no centro */
+    width: 0;
+    height: 2px;/* Espessura da underline */
+    background-color: white;/* Cor da underline */
+    transform: translate(-50%); /* Alinha o ponto inicial no centro */
+    transition: width .25s ease-in-out; /* Define a animação */
+}
+
+header nav ul li:hover::after{
+    width: 100%; /* Expande a underline para os lados */
+    /* left: 0; */ /* Garante a expansão completa */
+    /* transform: translateX(0); */ /* Remove o deslocamento no hover */
+}
+
+
+header nav ul li:hover{
+    color: var(--cor-texto-menu);
+    cursor: pointer;
+    transition: color 0,25s ease-in-out; /* Animação da cor */
+}
+
+/* Conteúdo Principal */
+main{
+    text-align: center;
+}
+
+.img-topo{
+    background-image: url(../img/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    /* padding: 600px; */
+    /* box-sizing: border-box; */
+}
+
+.primeiro-artigo{
+    margin: auto;
+    /* max-width: 900px; */
+    padding: 100px;
+}
+
+.primeiro-artigo article > h2{
+    font-size: 3.7rem;
+    color: var(--cor-textos);
+    font-family: "Belleza", serif;
+}
+
+.primeiro-artigo article > p{
+    margin: auto;
+    font-size: 1.9rem;
+    margin-top: 30px;
+    max-width: 950px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: var(--cor-textos);
+}
+
+.imagens-modelos{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
+    /* margin-bottom: 100px; */
+}
+
+.imagens-modelos h3{
+    margin: 10px 0;
+    font-size: 2rem;
+    color: var(--cor-textos);
+    letter-spacing: 2px;
+}
+
+.imagens-modelos p{
+    font-size: 1.6rem;
+    color: var(--cor-textos);
 }
 
 .img-fundo{
     background-image: url(../img/bg_detalhe.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-clip: border-box;
-    padding: 80px;
+    /* background-clip: border-box; */
+    background-position: bottom right;
+    background-attachment: fixed;
+    margin-top: 100px;
+    padding: 100px;
+    text-align: left;
+
 }
 
-.img-fundo article h1{
+.img-fundo article{
+    max-width: 60%;
+}
+
+.img-fundo article > h1{
     color: white;
+    font-size: 4.5rem;
+    font-family: "Viaoda Libre", serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.img-fundo article > p{
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    /* max-width: 600px; */
+}
+
+/* Rodapé */
+footer{
+    background-color: var(--cor-footer);
+    color: var(--cor-texto-footer);
+    padding: 30px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.3rem;
 }
