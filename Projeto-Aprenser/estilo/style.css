@@ -15,12 +15,27 @@ p, a{
   font-size: 1.6rem;
 }
 
+.title-ser{
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+}
+
 nav a{
   color: inherit;
 }
 
 .upper{
   text-transform: uppercase;
+}
+
+.btn{
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.6rem 4.6rem;
+
+  display: inline-block;
 }
 
 .wrapperContainer-dark{
@@ -60,4 +75,19 @@ nav a{
   display: flex;
   gap: .7rem;
   list-style-type: none;
+}
+
+.navigation a:hover{
+  background-color: black;
+}
+
+.wrapperContainer-hero{
+  background-image: linear-gradient(to top, transparent, var(--primary-color));
+}
+
+.heroBanner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
 }
