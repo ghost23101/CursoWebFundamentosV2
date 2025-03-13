@@ -155,26 +155,19 @@ nav a{
 
 .nossa-escola{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
+  /* justify-content: space-between;
+  align-items: center; */
+  gap: 7rem;
+  padding-top: 6rem;
 }
 
-.nossa-escola img{
-  display: block;
-  width: 100%;
-}
-
-.nossa-escola h2{
-  text-align: center;
-}
-
-.container-school{
-  margin-left: 100px;
+.title-school{
+  font-size: 3.2rem;
+  margin-top: 2rem;
+  /* text-align: center; */
 }
 
 .container-school p{
   font-size: 1.8rem;
   line-height: 1.5;
-  text-align: left;
 }
