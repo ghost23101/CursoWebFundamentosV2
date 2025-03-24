@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Details</title>
+
+        <style>
+            details{
+                color: red;
+                background-color: #ccc;
+                margin-bottom: 1rem;
+                padding: .5rem;
+            }
+
+            details summary{
+                cursor: pointer;
+            }
+
+            details[open]{
+                background-color: beige;
+                color: black;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Curso Web Designer</h1>
+
+        <details open>
+            <summary>Pré-requisitos</summary>
+
+            <p>Para fazer esse curso é necessário conhecimento de Sistema operacional</p>
+        </details>
+
+        <details>
+            <summary>Carga horária</summary>
+
+            <p>180 horas</p>
+        </details>
+    </body>
+</html>
