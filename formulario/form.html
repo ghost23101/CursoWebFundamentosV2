@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulário</title>
+
+        <style>
+            body{
+                padding-bottom: 100vh;
+            }
+        </style>
     </head>
 
     <body>
@@ -59,6 +65,36 @@
 
                 <label>
                     <input type="checkbox" name="interesse" id="" value="java">Java
+                </label>
+                <br><br>
+
+                <label>Escolha uma linguagem
+                    <br>
+                    <select name="linguagem" required multiple size="7">
+                        <option value="">Selecione uma</option>
+
+                        <optgroup label="frontend">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JS</option>
+                        </optgroup>
+
+                        <optgroup label="backend">
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                        </optgroup>
+                    </select>
+                    
+                    <input type="text" list="linguagemList">
+
+                    <datalist id="linguagemList">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JS">
+                        <option value="Java">
+                        <option value="Python">
+                        <option value="PHP">
+                    </datalist>
                 </label>
             </fieldset>
             <br><br>
