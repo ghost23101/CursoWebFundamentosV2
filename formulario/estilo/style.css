@@ -67,7 +67,24 @@ input{
 
 .btn{
     width: fit-content;
+    cursor: pointer;
     margin-left: auto;
     background-color: rgb(39, 39, 104);
     color: white;
+}
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn2{
+    cursor: pointer;
+    margin-left: auto;
+    background-color: rgb(39, 39, 104);
+    color: white;
+}
+
+.btn_lim{
+    background-color: rgb(222, 0, 0);
 }
