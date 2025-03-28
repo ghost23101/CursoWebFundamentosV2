@@ -64,3 +64,10 @@ input{
     margin-bottom: 1.5em;
     font-size: 1em;
 }
+
+.btn{
+    width: fit-content;
+    margin-left: auto;
+    background-color: rgb(39, 39, 104);
+    color: white;
+}
