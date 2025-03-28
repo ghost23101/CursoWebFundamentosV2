@@ -19,5 +19,11 @@
         <label for="">Porcentagem da tarefa
             <progress max="100" value="50">50%</progress>
         </label>
+
+        <form oninput="result.value=a.value * b.value">
+            <input type="number" name="a" id="a"> X
+            <input type="number" name="b" id="b"> =
+            <output name="result" for="a b"></output>
+        </form>
     </body>
 </html>
