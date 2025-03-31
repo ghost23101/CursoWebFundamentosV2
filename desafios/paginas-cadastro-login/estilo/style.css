@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root{
+    --primeira-cor: #3a68b7;
+    --segunda-cor: #ff000d;
+    --terceira-cor: #0ec72a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--primeira-cor);
+}
+
+form{
+    background-color: white;
+    padding: 40px;
+    width: 600px;
+    box-shadow: -12px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+fieldset{
+    border: none;
+    /* padding: 20px 0; */
+}
+
+legend{
+    font-size: 4rem;
+    padding: 2rem 0;
+    color: var(--primeira-cor);
+    font-weight: 200;
+}
+
+label{
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid var(--primeira-cor);
+    outline: none;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.box-entrada{
+    width: 100%;
+    transition: 350ms ease-in-out;
+}
+
+.box-entrada:invalid:focus{
+    border-bottom: 2px solid var(--segunda-cor);
+}
+.box-entrada:valid:focus{
+    border-bottom: 2px solid var(--terceira-cor);
+}
+
+.box-entrada:focus{
+    border-bottom: 2px solid var(--primeira-cor);
+    padding-left: 1.2rem;
+    transition: 300ms ease-in-out;
+}
+
+.btn{
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.btn-login{
+    background-color: var(--primeira-cor);
+    padding: 1.4rem 1.8rem;
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-cad{
+    color: var(--primeira-cor);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+a.link{
+    /* display: inline-flex;
+    align-items: center; */
+    font-size: 1.6rem;
+    margin-left: 20%;
+}

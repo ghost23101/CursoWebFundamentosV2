@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+        <link rel="stylesheet" href="estilo/contato.css">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Cadastre-se</legend>
+
+                <label for="name">Usuário:</label>
+                <input class="box-entrada" type="text" name="name" id="name" placeholder="Digite seu usuário" minlength="6" maxlength="30" autofocus required>
+
+                <label for="senha">E-mail:</label>
+                <input class="box-entrada" type="email" name="email" id="email" placeholder="Digite um e-mail válido" required>
+
+                <label for="senha">Senha:</label>
+                <input class="box-entrada" type="password" name="senha" id="senha" placeholder="Digite uma senha válida" minlength="6" maxlength="50" required>
+
+                <input class="btn-cad btn" type="button" value="Cadastra-se">
+
+                <p class="link2">Já possui cadastro?&nbsp;<a href="./index.html">Faça login</a></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
