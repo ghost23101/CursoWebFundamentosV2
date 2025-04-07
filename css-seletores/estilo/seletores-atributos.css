@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+a[href="#"]:not(.link-ok){
+    opacity: .2; 
+    /* Está permitindo remover uma regra CSS padrão, e colocando opacidade no lugar */
+}
+
+a[href^="http"]{
+    color: red;
+    /* Seleciona elementos cujo o atributo começa com http */
+}
+
+a[href$="pdf"]{
+    color: green;
+    /* Seleciona elementos cujo o atributo termina com .pdf */
+}
+
+a[target="_blank"]{
+    text-decoration: none;
+    /* Seleciona elementos cujo o atributo contenha target="_blanck" */
+}
