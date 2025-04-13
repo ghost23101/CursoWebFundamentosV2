@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio de Pseudo-classes de Parentesco</title>
+
+        <style>
+            ul{
+                margin: 0 auto;
+                width: 50%;
+            }
+
+            li{
+                width: 30%;
+                padding: 5px;
+            }
+
+            li:nth-child(3n+1){
+                background: linear-gradient(to left, #ff4343 10%, yellow 60%);
+                font-weight: bold;
+                text-decoration: underline;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+            <li>Item de Lista</li>
+        </ul>
+    </body>
+</html>
