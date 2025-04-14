@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+p::before{
+    content: " ANTES ";
+}
+
+p::after{
+    content: " DEPOIS";
+}
+
+div{
+    border: 6px solid red;
+    padding: 1em;
+    position: relative;
+}
+
+p{
+    margin: 0;
+}
+
+div::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+div::before{
+    content: url(https://placehold.co/50x50/000000/FFF);
+    float: left;
+    margin-left: 1em;
+}
