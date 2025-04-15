@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-Classes</title>
+
+        <style>
+            button{
+                background-color: #5b5b5b;
+                color: white;
+                border: none;
+                padding: 1em;
+                margin-bottom: .5em;
+            }
+
+            button:disabled{
+                opacity: .5;
+            }
+
+            p:empty::before{
+                content: "parágrafo vazio ???";
+            }
+
+            /* a:focus{
+                background-color: yellow;
+            } */
+            a:hover, a:focus{
+                background-color: yellow;
+            }
+
+            input[type="text"]:read-write{
+                background-color: #7e7e7e;
+                border: none;
+                padding: .5em;
+            }
+
+            input[type="text"]:disabled{
+                background-color: white;
+            }
+
+            input[type="text"]:read-only:not(:disabled){
+                background-color: aquamarine;
+            }
+            
+
+            input[type="text"]::placeholder{
+                color: white;
+            }
+
+            input[type="text"]:placeholder-shown{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button>Vai</button>
+        <br>
+
+        <button disabled>Vai disabled</button>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dolorum amet enim. Eaque quo fuga eum deserunt, voluptatem temporibus? Explicabo odio similique maxime officiis nihil quaerat repellendus nostrum placeat dolor.</p>
+
+        <p> </p>
+
+        <p></p>
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+        </ul>
+
+        <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+        <p tabindex="1">Lorem ipsum dolor sit amet.</p>
+        <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+        <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+        <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+        <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+
+        <form action="#">
+            <input type="text" value="valor inicial"><br><br>
+            <input type="text" value="valor" disabled><br><br>
+            <input type="text" value="valor" readonly><br><br>
+            <input type="text" placeholder="placeholder"><br><br>
+            <input type="text">
+        </form>
+    </body>
+</html>
