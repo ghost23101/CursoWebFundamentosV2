@@ -51,14 +51,32 @@
             input[type="text"]:placeholder-shown{
                 background-color: aqua;
             }
+
+            p:only-child{
+                background-color: orangered;
+            }
+
+            p:read-write{
+                border: 2px solid red;
+            }
+
+            div:target{
+                border: 4px dashed red;
+            }
         </style>
     </head>
 
     <body>
-        <button>Vai</button>
-        <br>
 
-        <button disabled>Vai disabled</button>
+        <div id="top">
+            <a href="#titulo">Vai para o título</a>
+            <br><br>
+    
+            <button>Vai</button>
+            <br>
+    
+            <button disabled>Vai disabled</button>
+        </div>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dolorum amet enim. Eaque quo fuga eum deserunt, voluptatem temporibus? Explicabo odio similique maxime officiis nihil quaerat repellendus nostrum placeat dolor.</p>
 
@@ -88,5 +106,52 @@
             <input type="text" placeholder="placeholder"><br><br>
             <input type="text">
         </form>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <br>
+        </div>
+        <hr>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p contenteditable>parágrafo editável</p>
+        </div>
+
+        <div id="titulo">
+            <h1>Título</h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, in dicta dolore ad quos inventore quis voluptatibus? Magni quod velit nemo necessitatibus perspiciatis accusamus, est molestiae, temporibus quis quasi modi.
+
+                <a href="#top">Vai para cima</a>
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </body>
 </html>
