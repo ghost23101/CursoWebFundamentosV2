@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Váriaveis Parte 2</title>
+
+        <style>
+
+            @property --success-color{
+                syntax: "<color>";
+                inherits: true;
+                initial-value: green;
+            }
+
+            @property --angle{
+                syntax: "<angle>";
+                inherits: false;
+                initial-value: 0deg;
+            }
+
+            :root{
+                --success-color: blue;
+                /* --error-color: red;
+                --angle: 0deg; */
+            }
+
+            body{
+                --success-color: 50px;
+                color: whitesmoke;
+                background-color: #00010b;
+            }
+
+            .container{
+                
+            }
+
+            .div2{
+                
+            }
+
+            b{
+                color: var(--success-color, red);
+            }
+
+            .anima{
+                width: 200px;
+                height: 200px;
+                background-color: var(--success-color, blue);
+                transform: rotate(var(--angle));
+                animation: rotate 5s linear infinite;
+            }
+
+            @keyframes rotate{
+                to{
+                    --angle: 360deg;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="div1">
+                <p>Lorem ipsum dolor sit <b>amet</b>.</p>
+            </div>
+
+            <div class="div2">
+                <p>Lorem <b>ipsum</b> dolor sit amet.</p>
+            </div>
+        </div>
+
+        <p>teste</p>
+
+        <div class="anima">
+            Anima
+        </div>
+    </body>
+</html>
