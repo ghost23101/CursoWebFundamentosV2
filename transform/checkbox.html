@@ -6,24 +6,35 @@
         <title>Checkbox</title>
 
         <style>
-            input[type=checkbox]{
+            .chk1{
                 display: none;
             }
             
-            label span{
+            .chk1+label span{
                 display: inline-block;
-                width: 25px;
-                height: 25px;
+                font-size: 20px;
+                width: 1em;
+                height: 1em;
                 background-color: red; 
             }
 
-            input[type=checkbox]:checked + label span{
+            .chk1:checked + label span{
                 background-color: blue;
+                position: relative;
             }
 
-            input[type=checkbox]:checked + label span{
-                border-left: 2px solid black;
-                border-bottom: 2px solid black;
+            input[type=checkbox]:checked + label span::before{
+                content: "";
+                display: block;
+                border: .087em solid white;
+                position: absolute;
+                top: 2px;
+                left: .38em;
+                right: .3em;
+                bottom: .3em;
+                transform: rotate(45deg);
+                border-left-color: transparent;
+                border-top-color: transparent;
             }
             </style>
     </head>
@@ -31,7 +42,7 @@
     <body>
         <h1>Checkbox</h1>
 
-        <input type="checkbox" id="html" checked>
+        <input type="checkbox" id="html" checked class="chk1">
         <label for="html">
 
             <span></span>
@@ -39,7 +50,7 @@
             HTML
         </label>
         
-        <input type="checkbox" id="css">
+        <input type="checkbox" id="css" class="chk1">
         <label for="css">
 
             <span></span>
@@ -47,12 +58,28 @@
             CSS
         </label>
 
-        <input type="checkbox" id="js">
+        <input type="checkbox" id="js" class="chk1">
         <label for="js">
 
             <span></span>
 
             Javascript
+        </label>
+        <hr>
+
+        <label class="lbl2">
+            <input type="checkbox">
+            HTML
+        </label>
+
+        <label class="lbl2">
+            <input type="checkbox">
+            CSS
+        </label>
+
+        <label class="lbl2">
+            <input type="checkbox">
+            JS
         </label>
     </body>
 </html>
