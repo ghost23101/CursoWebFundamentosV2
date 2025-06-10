@@ -36,7 +36,72 @@
                 border-left-color: transparent;
                 border-top-color: transparent;
             }
-            </style>
+
+            .lbl2 span{
+                display: inline-block;
+                font-size: 20px;
+                width: 1em;
+                height: 1em;
+                background-color: red;
+                position: relative;
+                transition: background-color .2s;
+            }
+
+            .lbl2 input[type="checkbox"]:checked + span{
+                background-color: blue;
+            }
+
+            /* .lbl2 input[type="checkbox"]:checked + span::before{
+                content: "";
+                display: block;
+                border: .087em solid white;
+                position: absolute;
+                top: 2px;
+                left: .38em;
+                right: .3em;
+                bottom: .3em;
+                transform: rotate(45deg);
+                border-left-color: transparent;
+                border-top-color: transparent;
+            } */
+
+            .lbl2 input[type="checkbox"] + span::before{
+                content: "";
+                display: block;
+                border: .087em solid white;
+                position: absolute;
+                top: 2px;
+                left: .38em;
+                right: .3em;
+                bottom: .3em;
+                transform: rotate(45deg);
+                border-left-color: transparent;
+                border-top-color: transparent;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+
+            .lbl2 input[type="checkbox"]:checked + span::before{
+                opacity: 1;
+            }
+
+            .lbl2 input[type="checkbox"]{
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                position: absolute;
+                outline: none;
+            }
+
+            .lbl2 input[type="checkbox"]:focus+span{
+                border: 2px solid black;
+                outline-offset: -4px;
+                box-sizing: border-box;
+            }
+
+        </style>
     </head>
 
     <body>
@@ -69,16 +134,19 @@
 
         <label class="lbl2">
             <input type="checkbox">
+            <span></span>
             HTML
         </label>
 
         <label class="lbl2">
             <input type="checkbox">
+            <span></span>
             CSS
         </label>
 
         <label class="lbl2">
             <input type="checkbox">
+            <span></span>
             JS
         </label>
     </body>
