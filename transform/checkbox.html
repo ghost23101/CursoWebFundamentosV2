@@ -101,6 +101,70 @@
                 box-sizing: border-box;
             }
 
+
+            .switch{
+                --switch-color: #cfd8dc;
+                --tempo: .2s;
+            }
+
+            .switch span{
+                display: inline-block;
+                width: 2em;
+                height: 1em;
+                border-radius: 1em;
+                outline: 2px solid var(--switch-color);
+                overflow: hidden;
+                position: relative;
+            }
+
+            .switch span::after{
+                content: '';
+                display: block;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                background-color: red;
+                transition: transform var(--tempo) ease-in-out;
+                transform: translateX(0);
+                position: relative;
+                z-index: 1;
+            }
+
+            .switch input:checked + span::after{
+                transform: translateX(100%);
+            }
+
+            .switch span::before{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(105, 0, 0);
+                transform: translateX(-100%);
+                transition: transform var(--tempo) ease-in-out;
+                position: absolute;
+                z-index: 0;
+            }
+
+            .switch input:checked + span::before{
+                transform: translateX(0);
+            }
+
+
+            .switch input[type="checkbox"]{
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                position: absolute;
+                outline: none;
+            }
+
+            .switch input:focus + span{
+                outline: 2px solid black;
+                outline-offset: 2px;
+            }
         </style>
     </head>
 
@@ -147,6 +211,31 @@
         <label class="lbl2">
             <input type="checkbox">
             <span></span>
+            JS
+        </label>
+        <hr>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span></span>
+
+            HTML
+        </label>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span></span>
+
+            CSS
+        </label>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span></span>
+
             JS
         </label>
     </body>
