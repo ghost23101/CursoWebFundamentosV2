@@ -13,23 +13,81 @@
             }
 
             html{
-                font-size: 62,5%;
+                font-size: 62.5%;
+                font-family: Arial, Helvetica, sans-serif;
             }
 
             body{
                 background-color: #ccc;
-            }
-
-            .gallery{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 50%;
-                margin: 0 auto;
-                flex-wrap: wrap;
-                gap: 10px;
-                padding: .8rem .44rem;
+                flex-direction: column;
+                min-height: 100vh;
+                gap: 2rem;
+            }
+
+            h1{
+                font-size: 3rem;
+            }
+
+            .gallery{
                 background-color: #fafafa;
+                width: 60rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: .5rem;
+                padding: .5rem;
+                box-shadow: 0 0 12px rgba(0, 0, 0, .6);
+            }
+
+            img{
+                max-width: 100%;
+                display: block;
+            }
+
+            .gallery .image{
+                flex-basis: calc(25% - .5rem);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .gallery p{
+                background-color: rgba(0, 0, 0, .8);
+                color: white;
+                text-transform: uppercase;
+                padding: 1rem;
+                letter-spacing: 2px;
+                font-size: .75rem;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                opacity: .5;
+                transform: translateY(100%);
+                transition: all .2s ease-in-out;
+            }
+
+            .image{
+                background-size: cover;
+            }
+
+            .image img{
+                transform: scale(1.1);
+                transition: all .2s ease-in-out;
+            }
+
+            .image a{
+                text-decoration: none;
+            }
+
+            .image:hover p{
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .image:hover img{
+                transform: scale(1.2) skew(2deg);
             }
         </style>
     </head>
