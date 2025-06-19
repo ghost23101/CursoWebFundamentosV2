@@ -51,6 +51,7 @@
                 flex-basis: calc(25% - .5rem);
                 position: relative;
                 overflow: hidden;
+                flex-grow: 1;
             }
 
             .gallery p{
@@ -89,6 +90,22 @@
             .image:hover img{
                 transform: scale(1.2) skew(2deg);
             }
+
+            .image::after{
+                content: "";
+                position: absolute;
+                background-color: white;
+                inset: 0;
+                opacity: .5;
+                pointer-events: none;
+                transform: scale(1);
+                transition: all 300ms ease-in-out;
+            }
+            
+            .image:hover::after{
+                opacity: 0;
+                transform: scale(.5);
+            }
         </style>
     </head>
 
@@ -118,6 +135,7 @@
                     <p>Decrição da imagem</p>
                 </a>
             </div>
+
             <div class="image">
                 <a href="#">
                     <img src="https://picsum.photos/300/300?random=4" alt="Imagem">
@@ -125,6 +143,7 @@
                     <p>Decrição da imagem</p>
                 </a>
             </div>
+
             <div class="image">
                 <a href="#">
                     <img src="https://picsum.photos/300/300?random=5" alt="Imagem">
@@ -132,6 +151,7 @@
                     <p>Decrição da imagem</p>
                 </a>
             </div>
+
             <div class="image">
                 <a href="#">
                     <img src="https://picsum.photos/300/300?random=6" alt="Imagem">
@@ -139,6 +159,7 @@
                     <p>Decrição da imagem</p>
                 </a>
             </div>
+
             <div class="image">
                 <a href="#">
                     <img src="https://picsum.photos/300/300?random=7" alt="Imagem">
@@ -146,9 +167,26 @@
                     <p>Decrição da imagem</p>
                 </a>
             </div>
+
             <div class="image">
                 <a href="#">
                     <img src="https://picsum.photos/300/300?random=8" alt="Imagem">
+
+                    <p>Decrição da imagem</p>
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="#">
+                    <img src="https://picsum.photos/300/300?random=9" alt="Imagem">
+
+                    <p>Decrição da imagem</p>
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="#">
+                    <img src="https://picsum.photos/300/300?random=10" alt="Imagem">
 
                     <p>Decrição da imagem</p>
                 </a>
