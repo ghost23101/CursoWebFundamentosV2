@@ -19,6 +19,32 @@ body{
     line-height: 1.7;
 }
 
+h1{
+    color: #a9a7a7;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+h3, h4, h5, h6{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+article{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
 .main-header{
     flex: 0 0 26rem;
     background-color: var(--secondary-color);
