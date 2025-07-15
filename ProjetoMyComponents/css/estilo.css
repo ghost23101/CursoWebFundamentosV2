@@ -92,7 +92,8 @@ ul a{
     
 }
 
-ul a:hover{
+ul a:hover,
+ul a:focus{
     background-color: #444856;
     /* transform: translateX(-5px); */
     padding-right: 1rem;
