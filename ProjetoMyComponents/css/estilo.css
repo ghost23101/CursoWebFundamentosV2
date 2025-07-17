@@ -154,3 +154,28 @@ nav li{
 .row > *{
     flex: 1 0 0%;
 }
+
+.alternate{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alternate li{
+    padding: 0;
+}
+
+.alternate li:not(:last-child){
+    border-bottom: 2px solid white;
+}
+
+/* .alternate li:last-child{
+    border-bottom: 0;
+} */
+
+.roman{
+    list-style-type: upper-roman;
+}
+
+.list-emoji{
+    list-style-type: "\1F642";
+}
