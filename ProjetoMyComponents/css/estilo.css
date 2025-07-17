@@ -145,7 +145,12 @@ nav li{
 
 .row{
     display: flex;
+    justify-content: space-between;
     gap: 2.5rem;
     padding: 1.5rem 0;
     box-sizing: border-box;
+}
+
+.row > *{
+    flex: 1 0 0%;
 }
