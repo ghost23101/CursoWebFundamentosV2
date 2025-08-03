@@ -3,6 +3,7 @@
 :root{
     --primary-color: #ff7833;
     --secondary-color: #31333b;
+    --secondary-color-light: #444856;
     --secondary-color-dark: #23252d;
 
     --default-gap: 3rem;
@@ -17,6 +18,11 @@ body{
     margin: 0;
     color: #e7e7e7;
     background-color: #ccc;
+    background-image: url(../img/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
@@ -61,13 +67,13 @@ p{
 
 .main-header{
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    background-color: rgba(49, 51, 59, .8);
 }
 
 .conteudo-main{
-    background-color: #444856;
+    background-color: rgba(68, 72, 86, .6);
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem;
+    padding: 6.5rem 6rem 100vh;
 }
 
 .list_nav{
@@ -86,6 +92,9 @@ nav{
     flex-direction: column; */
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 ul a{
