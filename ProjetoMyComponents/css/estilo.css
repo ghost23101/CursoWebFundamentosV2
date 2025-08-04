@@ -302,3 +302,23 @@ select{
 .table-verticalLines th:not(:last-child){
     border-right: 1px solid var(--secondary-color-dark);
 }
+
+.link-icon{
+    display: inline-block;
+    margin-right: 3rem;
+    transition: color .3s;
+    font-style: normal;
+}
+
+.link-icon svg{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: currentColor;
+}
+
+.link-icon:hover{
+    color: var(--primary-color);
+}
