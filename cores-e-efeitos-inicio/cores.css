@@ -37,3 +37,8 @@ section{
     margin-bottom: 16px;
     font-weight: bold;
 }
+
+.cores:nth-of-type(2){
+    background-color: yellow;
+    background-clip: content-box;
+}
