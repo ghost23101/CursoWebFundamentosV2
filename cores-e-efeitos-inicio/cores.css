@@ -38,7 +38,13 @@ section{
     font-weight: bold;
 }
 
-.cores:nth-of-type(2){
-    background-color: yellow;
-    background-clip: content-box;
+.cores:nth-of-type(3){
+    background-color: hsl(100deg, 100%, 80%, .5);
+    /* background-clip: content-box; */
+    box-shadow: 5px 5px 6px hsl(100deg, 100%, 30%) inset;
+}
+
+.cores:nth-of-type(3):hover{
+    background-color: hsl(100deg, 100%, 40%);
+    /* background-clip: content-box; */
 }
