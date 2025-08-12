@@ -119,3 +119,7 @@ section{
     background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
     filter: hue-rotate(10turn);
 }
+
+.cores:nth-of-type(19){
+    background-image: repeating-linear-gradient(to top right, white 0px, white 5px, black 5px, black 10px);
+}
