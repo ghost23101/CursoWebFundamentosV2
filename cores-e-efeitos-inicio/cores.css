@@ -70,3 +70,37 @@ section{
 .cores:nth-of-type(8){
     background-image: radial-gradient(circle at 50px 20px, #0000ffad, #ff000095 20%);
 }
+
+.cores:nth-of-type(9){
+    background-image: radial-gradient(ellipse at 50px 20px, #0000ffad, #ff000095 20%);
+}
+
+.cores:nth-of-type(10){
+    background-image: radial-gradient(closest-corner at 50px 20px, #0000ff, #ff000095);
+}
+
+.cores:nth-of-type(11){
+    background-image: radial-gradient(farthest-corner at 50px 20px, #0000ff, #ff000095);
+}
+
+.cores:nth-of-type(12){
+    background-image: radial-gradient(closest-side at 50px 20px, #0000ff, #ff000095);
+}
+
+.cores:nth-of-type(13){
+    background-image: radial-gradient(farthest-side at 50px 20px, #0000ff, #ff000095);
+}
+
+.cores:nth-of-type(14){
+    background-image: radial-gradient(circle farthest-side at 50px 20px, #0000ff, #ff000095);
+}
+
+.cores:nth-of-type(15){
+    background-image: radial-gradient(circle farthest-side at 50px 20px, #0000ffb7, #ff000095),
+    radial-gradient(circle farthest-corner at bottom right, #ffff007d, transparent);
+}
+
+.cores:nth-of-type(16){
+    background-image: radial-gradient(at top, #0000ffb7, #ff000095),
+    radial-gradient(at bottom right, #ffff007d, transparent);
+}
