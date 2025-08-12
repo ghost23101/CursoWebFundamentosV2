@@ -66,3 +66,7 @@ section{
 .cores:nth-of-type(7){
     background-image: radial-gradient(ellipse, rgba(0, 0, 255, 0.678) 20%, color-mix(in srgb, red, transparent), #ff000095 10%, green);
 }
+
+.cores:nth-of-type(8){
+    background-image: radial-gradient(circle at 50px 20px, #0000ffad, #ff000095 20%);
+}
