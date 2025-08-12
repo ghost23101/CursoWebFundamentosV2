@@ -48,3 +48,9 @@ section{
     background-color: hsl(100deg, 100%, 40%);
     /* background-clip: content-box; */
 }
+
+.cores:nth-of-type(4){
+    background-image: linear-gradient(70deg, blue, transparent),
+        linear-gradient(to top, red, transparent);
+    background-clip: content-box, padding-box;
+}
