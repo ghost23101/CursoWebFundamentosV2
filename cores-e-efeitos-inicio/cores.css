@@ -104,3 +104,18 @@ section{
     background-image: radial-gradient(at top, #0000ffb7, #ff000095),
     radial-gradient(at bottom right, #ffff007d, transparent);
 }
+
+.cores:nth-of-type(17){
+    background-image: conic-gradient(from 45deg, red 50%, blue, green);
+}
+
+.cores:nth-of-type(18){
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    transition: filter 5s linear;
+    aspect-ratio: 1;
+}
+
+.cores:nth-of-type(18):hover{
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    filter: hue-rotate(10turn);
+}
