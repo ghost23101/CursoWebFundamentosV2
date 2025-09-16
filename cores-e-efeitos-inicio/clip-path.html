@@ -73,6 +73,22 @@
             #d1{
                 clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 20% 60%);
             }
+
+            #d2{
+                clip-path: circle(150px at center);
+            }
+
+            #d3{
+                clip-path: ellipse(50px 25px at center);
+            }
+
+            #d4{
+                clip-path: inset(20px 30px 50px 40px);
+            }
+
+            #d5{
+                clip-path: inset(20px round 50px 25% / 20px 50px);
+            }
         </style>
     </head>
 
@@ -89,6 +105,10 @@
 
         <section class="clippath">
             <div id="d1"></div>
+            <div id="d2"></div>
+            <div id="d3"></div>
+            <div id="d4"></div>
+            <div id="d5"></div>
         </section>
     </body>
 </html>
