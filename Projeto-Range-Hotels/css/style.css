@@ -4,7 +4,7 @@
 
 :root{
     --primary-color: #622A76;
-    --background-color: #612673;
+    --background-color: #612674;
 }
 
 html{
@@ -12,20 +12,58 @@ html{
 }
 
 .cabecalho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1.6rem;
+    text-align: center;
+    /* padding: 1.6rem; */
+}
+
+.max_width{
+    max-width: 70.25em;
 }
 
 .btn_nav{
-    display: flex;
-    gap: 1.6rem;
+    background-color: var(--background-color);
 }
 
-.btn_nav_items{
+.btn_nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn_nav a{
+    color: white;
     text-decoration: none;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-weight: 500;
+    display: block;
+    padding: 1.2em;
+}
+
+.btn_nav li:hover{
+    background-color: color-mix(in srgb, var(--primary-color), white 10%);
+}
+
+@media screen and (min-width: 48.75em) {
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top_header_logo{
+        margin-left: 1.6em;
+    }
+
+    .btn_nav{
+        background-color: initial;
+    }
+
+    .btn_nav li{
+        display: inline-block;
+    }
+
+    .btn_nav a{
+        color: var(--primary-color);
+    }
+
+    .btn_nav a:hover{
+        background-color: color-mix(in srgb, var(--primary-color), white 80%);
+    }
 }
