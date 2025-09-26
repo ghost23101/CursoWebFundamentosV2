@@ -58,6 +58,25 @@ html{
     width: 100%;
 }
 
+.herobanner_title{
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.herobanner_subtitle{
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white);
+}
+
+.herobanner_btn{
+    display: inline-block;
+    padding: .9em 2.3em;
+    background-color: #58c4c4;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 48.75em) {
     .cabecalho{
         display: flex;
