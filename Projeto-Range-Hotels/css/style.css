@@ -18,6 +18,7 @@ html{
 
 .max_width{
     max-width: 70.25em;
+    margin: auto;
 }
 
 .btn_nav{
