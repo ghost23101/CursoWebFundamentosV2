@@ -28,6 +28,7 @@ html{
 .btn_nav ul{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .btn_nav a{
@@ -39,6 +40,22 @@ html{
 
 .btn_nav li:hover{
     background-color: color-mix(in srgb, var(--primary-color), white 10%);
+}
+
+.herobanner{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1em;
+}
+
+.icon_play{
+    height: 5em;
+    width: 5em;
+    display: none;
+}
+
+.icon_play img{
+    width: 100%;
 }
 
 @media screen and (min-width: 48.75em) {
