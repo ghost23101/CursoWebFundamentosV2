@@ -61,11 +61,13 @@ html{
 .herobanner_title{
     color: var(--primary-color);
     font-size: 1.5em;
+    margin: 1.5em;
 }
 
 .herobanner_subtitle{
     font-size: 1em;
     color: color-mix(in srgb, var(--primary-color), white);
+    line-height: 1.5;
 }
 
 .herobanner_btn{
@@ -102,5 +104,57 @@ html{
 
     .btn_nav a:hover{
         background-color: color-mix(in srgb, var(--primary-color), white 80%);
+    }
+}
+
+@media screen and (min-width: 48.75em){
+    .herobanner{
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    .icon_play{
+        display: block;
+        margin: auto;
+    }
+
+    .herobanner_title, .herobanner_subtitle{
+        color: white;
+    }
+}
+
+@media screen and (min-width: 56.25em) {
+    .herobanner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .herobanner .maxwidth{
+        margin: initial;
+        margin-bottom: 4em;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 74em){
+    .herobanner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .herobanner .maxwidth{
+        width: 50%;
+    }
+
+    .icon_play{
+        width: 7em;
+        height: 7em;
     }
 }
