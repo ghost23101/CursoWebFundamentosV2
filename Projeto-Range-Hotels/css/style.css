@@ -79,6 +79,7 @@ html{
     border-radius: 10px;
 }
 
+/* md */
 @media screen and (min-width: 48.75em) {
     .cabecalho{
         display: flex;
@@ -107,6 +108,7 @@ html{
     }
 }
 
+/* md */
 @media screen and (min-width: 48.75em){
     .herobanner{
         background-color: var(--primary-color);
@@ -123,6 +125,7 @@ html{
     }
 }
 
+/* lg */
 @media screen and (min-width: 56.25em) {
     .herobanner{
         background-image: url(../images/bg_topo_1198x670.jpg);
@@ -139,6 +142,7 @@ html{
     }
 }
 
+/* xl */
 @media screen and (min-width: 74em){
     .herobanner{
         background-image: url(../images/bg_topo_1600x1374.jpg);
@@ -163,3 +167,10 @@ html{
         height: 7em;
     }
 }
+
+/* 
+    min-width: 0        -> col-sm
+    min-width: 48.75em  -> col-md
+    min-width: 56.25em  -> col-lg
+    min-width: 74em     -> col-xl
+*/
