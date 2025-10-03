@@ -142,6 +142,7 @@ html{
 @media screen and (min-width: 74em){
     .herobanner{
         background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-blend-mode: luminosity;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
@@ -151,6 +152,10 @@ html{
 
     .herobanner .maxwidth{
         width: 50%;
+    }
+
+    .herobanner_title, .herobanner_subtitle{
+        text-shadow: 4px 6px 6px #00000080;
     }
 
     .icon_play{
