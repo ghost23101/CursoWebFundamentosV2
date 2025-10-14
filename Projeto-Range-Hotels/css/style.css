@@ -258,10 +258,21 @@ html{
     /* gap: 4em 1em; */
 }
 
-@media screen and (min-width: 37.5em){
+.main_content_article{
+    container: main_content / inline-size;
+}
+
+@container main_content (min-width: 600px){
+    .maincontent_container{
+        display: flex;
+        gap: 1em;
+    }
+}
+
+/* @media screen and (min-width: 37.5em){
     .main_content_article,
     .main_content_img img{
         display: flex;
         gap: 1em;
     }
-}
+} */
