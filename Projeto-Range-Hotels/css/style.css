@@ -275,6 +275,14 @@ html{
     .main_content_img img{
         max-height: 382px;
     }
+
+    .main_content_img{
+        flex: 0 0 25%;
+    }
+
+    .main_content_text{
+        flex-grow: 1;
+    }
 }
 
 .footer{
