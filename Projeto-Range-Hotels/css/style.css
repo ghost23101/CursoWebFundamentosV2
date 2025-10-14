@@ -265,7 +265,15 @@ html{
 @container main_content (min-width: 600px){
     .maincontent_container{
         display: flex;
-        gap: 1em;
+        gap: var(--default-gap);
+    }
+
+    .main_content_title{
+        margin-top: 0;
+    }
+
+    .main_content_img img{
+        max-height: 382px;
     }
 }
 
