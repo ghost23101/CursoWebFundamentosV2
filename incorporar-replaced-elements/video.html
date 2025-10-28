@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video</title>
+
+        <style>
+            ::cue{
+                padding: 10px;
+                color: yellow;
+                font-size: 1.6em;
+                background-color: rgba(0, 0, 0, 0.496);
+            }
+        </style>
+    </head>
+
+    <body>
+        <video controls autoplay muted loop>
+            <source src="media/video-cachorro.mp4" type="video/mp4">
+
+            <track src="media/track.pt.vtt" kind="captions" srclang="pt-br" label="Português" default></track>
+
+            <track src="media/track.en.vtt" kind="captions" srclang="en" label="English"></track>
+
+            <p>O seu browser não suporta video</p>
+        </video>
+    </body>
+</html>
