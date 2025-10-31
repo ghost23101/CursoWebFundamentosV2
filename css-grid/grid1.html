@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid</title>
+
+        <style>
+            h2{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .grid-container{
+                width: 300px;
+                background: #ccc;
+            }
+
+            .grid_item{
+                background: #999;
+                font-size: 2em;
+                font-family: sans-serif;
+                padding: 5px 15px;
+            }
+
+            .grid_item:nth-child(even){
+                background: #999;
+                color: white;
+            }
+
+            .grid_item:nth-child(odd){
+                background: #eee;
+            }
+
+            /* Grid */
+
+            .grid-container{
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: 100px 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Grid Layout</h2>
+
+        <div class="grid-container">
+            <div class="grid_item">1</div>
+            <div class="grid_item">2</div>
+            <div class="grid_item">3</div>
+            <div class="grid_item">4</div>
+            <div class="grid_item">5</div>
+            <div class="grid_item">6</div>
+        </div>
+    </body>
+</html>
