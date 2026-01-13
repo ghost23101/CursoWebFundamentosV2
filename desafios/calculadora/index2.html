@@ -87,24 +87,112 @@
         <div id="calculator">
             <output id="display">0</output>
 
-            <button>AC</button>
-            <button>%</button>
-            <button>X</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>=</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="btn-mais">+</button>
-            <button class="btn-virgula">0</button>
-            <button>,</button>
+            <button data-value="AC">AC</button>
+            <button data-value="%">%</button>
+            <button data-value="*">X</button>
+            <button data-value="/">/</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="=">=</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="-">-</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="btn-mais" data-value="+">+</button>
+            <button class="btn-virgula" data-value="0">0</button>
+            <button data-value=".">,</button>
         </div>
+
+        <script>
+            const display = document.getElementById("display");
+                const buttons = document.querySelectorAll("button");
+
+                let currentValue = "0";
+                let operator = "";
+                let firstValue = null;
+
+                function updateDisplay() {
+                    display.textContent = currentValue;
+                }
+
+                buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const value = button.dataset.value;
+
+                        // AC
+                        if (value === "AC") {
+                            currentValue = "0";
+                            operator = "";
+                            firstValue = null;
+                            updateDisplay();
+                            return;
+                        }
+
+                        // Números
+                        if (!isNaN(value)) {
+                            currentValue = currentValue === "0" ? value : currentValue + value;
+                            updateDisplay();
+                            return;
+                        }
+
+                        // Ponto decimal
+                        if (value === ".") {
+                            if (!currentValue.includes(".")) {
+                                currentValue += ".";
+                                updateDisplay();
+                            }
+                            return;
+                        }
+
+                        // Operadores
+                        if (["+", "-", "*", "/"].includes(value)) {
+                            firstValue = parseFloat(currentValue);
+                            operator = value;
+                            currentValue = "0";
+                            return;
+                        }
+
+                        // Porcentagem
+                        if (value === "%") {
+                            currentValue = (parseFloat(currentValue) / 100).toString();
+                            updateDisplay();
+                            return;
+                        }
+
+                        // Igual
+                        if (value === "=") {
+                            if (firstValue !== null && operator) {
+                                const secondValue = parseFloat(currentValue);
+                                let result = 0;
+
+                                switch (operator) {
+                                    case "+":
+                                        result = firstValue + secondValue;
+                                        break;
+                                    case "-":
+                                        result = firstValue - secondValue;
+                                        break;
+                                    case "*":
+                                        result = firstValue * secondValue;
+                                        break;
+                                    case "/":
+                                        result = secondValue === 0 ? "Erro" : firstValue / secondValue;
+                                        break;
+                                }
+
+                                currentValue = result.toString();
+                                operator = "";
+                                firstValue = null;
+                                updateDisplay();
+                            }
+                        }
+                    });
+                });
+        </script>
+
     </body>
 </html>
