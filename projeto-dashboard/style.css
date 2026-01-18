@@ -157,15 +157,4 @@ main > .grid-half{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--default-padding);
-    gap: 20px;
-}
-
-article span{
-    gap: 200px;
-}
-
-.line-left{
-    border-left: 2px solid black;
-    margin-left: 20px;
 }
