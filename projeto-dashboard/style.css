@@ -50,7 +50,22 @@ img{
 main{
     grid-row: 2 / -1;
     grid-column: 2 / -1;
-    background-color: #eee;
+    background-color: var(--background-gray);
+
+    display: grid;
+    gap: var(--default-padding);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+
+    padding: var(--default-padding);
+}
+
+main > *{
+    grid-column: span 2;
+}
+
+main > .grid-half{
+    grid-column: span 1;
 }
 
 .mainNav-linkLogo{
@@ -134,4 +149,23 @@ main{
     font-weight: 500;
     text-transform: uppercase;
     color: color-mix(in srgb, var(--black), transparent 60%);
+}
+
+.summary{
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--default-padding);
+    gap: 20px;
+}
+
+article span{
+    gap: 200px;
+}
+
+.line-left{
+    border-left: 2px solid black;
+    margin-left: 20px;
 }
