@@ -71,8 +71,17 @@ main{
 
 .main-nav-menu a, 
 .main-nav-topnav_menu a{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
     text-decoration: none;
     color: #5a5a5f;
+}
+
+.main-nav-menu svg, 
+.main-nav-topnav_menu svg{
+    display: block;
+    /* vertical-align: middle; */
 }
 
 .main-nav-topnav_menu{
@@ -94,12 +103,30 @@ main{
 }
 
 .perfil{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     margin-right: var(--default-padding);
 }
+
+.perfil_thumb{
+    height: 48px;
+    width: 48px;
+    flex-shrink: 0;
+}
+
+.perfil_thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .perfil_name{
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--black);
+    line-height: 1.2;
 }
 
 .perfil_rule{
