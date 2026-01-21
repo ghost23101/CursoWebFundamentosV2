@@ -37,6 +37,9 @@ img{
     background-color: white;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .topnav{
@@ -112,6 +115,10 @@ main > .grid-half{
     justify-content: space-between;
     flex-grow: 1;
     padding-top: var(--default-padding);
+}
+
+.main-nav-menu li{
+    margin-top: 1rem;
 }
 
 .main-nav-menu:last-child{
