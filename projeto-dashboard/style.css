@@ -4,6 +4,7 @@
     --primary-color: #004eda;
     --background-gray: #f2f2f8;
     --default-padding: 3.2rem;
+    --middle-padding: calc(var(--default-padding) / 2);
     --black: #111;
     --color-text: #5a5a5f;
 }
@@ -156,5 +157,43 @@ main > .grid-half{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: var(--middle-padding) var(--default-padding);
+    border-radius: 4px;
+}
+
+.summary article{
+    padding: var(--middle-padding) 0;
+}
+
+.summary .description{
+    font-size: 1.4rem;
+}
+
+.summary .number{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: var(--middle-padding);
+}
+
+.separeted{
+    width: 2px;
+    background-color: var(--background-gray);
+    align-self: stretch;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: calc(var(--middle-padding) / 2) var(--default-padding);
+    font-size: 1.4rem;
+}
+
+.summary .btn{
+    align-self: stretch;
+    display: flex;
     align-items: center;
 }
