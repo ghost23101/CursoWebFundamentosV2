@@ -23,8 +23,9 @@ html{
 body{
     color: var(--color-text);
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 64px auto;
+    grid-template-columns: max-content 1fr;
+    /* grid-template-rows: 64px auto; */
+    grid-template-rows: 6.4rem minmax(calc(100vh - 64px), auto);
 }
 
 img{
@@ -40,6 +41,7 @@ img{
     max-height: 100vh;
     position: sticky;
     top: 0;
+    /* padding-right: var(--default-padding); */
 }
 
 .topnav{
@@ -80,12 +82,17 @@ main > .grid-half{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2.4rem;
+    padding-right: var(--default-padding);
 }
 
 .main-nav-menu, 
 .main-nav-topnav_menu{
     list-style-type: none;
     padding-left: var(--default-padding);
+}
+
+.main-nav-menu{
+    padding-right: var(--default-padding);
 }
 
 .main-nav-menu a, 
@@ -95,6 +102,7 @@ main > .grid-half{
     gap: 0.8rem;
     text-decoration: none;
     color: #5a5a5f;
+    font-size: 1.4rem;
 }
 
 .main-nav-menu svg, 
@@ -123,6 +131,12 @@ main > .grid-half{
 
 .main-nav-menu:last-child{
     padding-bottom: var(--default-padding);
+}
+
+.main-nav-menu:not(:last-child){
+    border-bottom: 2px solid var(--background-gray);
+    padding-bottom: var(--default-padding);
+
 }
 
 .perfil{
@@ -173,18 +187,18 @@ main > .grid-half{
     padding: var(--middle-padding) 0;
 }
 
-.summary .description{
+.summary_description{
     font-size: 1.4rem;
 }
 
-.summary .number{
+.summary_number{
     font-size: 1.8rem;
     color: var(--primary-color);
     font-weight: 600;
     margin-left: var(--middle-padding);
 }
 
-.separeted{
+.summary_separeted{
     width: 2px;
     background-color: var(--background-gray);
     align-self: stretch;
@@ -199,7 +213,7 @@ main > .grid-half{
     font-size: 1.4rem;
 }
 
-.summary .btn{
+.summary_btn{
     align-self: stretch;
     display: flex;
     align-items: center;
