@@ -36,7 +36,7 @@ body {
     padding: 0;
     text-align: right;
 
-    display: none;
+    /* display: none; */
 }
 
 .header-menu a {
@@ -242,7 +242,7 @@ img {
     }
     
     .header-menu{
-        display: block;
+        /* display: block; */
         margin: 0;
     } 
 
@@ -330,6 +330,8 @@ img {
         grid-column: 8 / 13;
     }
 }
+
+/* hamburguer menu */
 
 /* .testemunhos_wrapper{
     display: flex;
