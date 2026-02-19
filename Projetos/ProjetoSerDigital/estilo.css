@@ -362,6 +362,10 @@ img {
     max-height: 100vh;
 }
 
+.menu-btn:checked+.menu-icon .nav-icon{
+    background-color: transparent;
+}
+
 .header-menu:focus-within{
     max-height: 100vh;
 }
@@ -383,6 +387,7 @@ img {
 .menu-icon{
     position: relative;
     cursor: pointer;
+    height: 24px;
     /* user-select: none; */
 }
 
@@ -402,6 +407,7 @@ img {
     height: 2px;
     width: 24px;
     position: absolute;
+    transition: transform .3s;
 }
 
 .nav-icon::after{
@@ -410,6 +416,19 @@ img {
 
 .nav-icon::before{
     transform: translateY(-8px);
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+}
+
+.menu-btn:focus + .menu-icon{
+    outline: 2px solid black;
+    outline-offset: 3px;
 }
 
 /* .testemunhos_wrapper{
